@@ -5,8 +5,9 @@ const bannerText =     `// ==UserScript==
 // @description  All selected comments are auto-pasted into the Abusive to Others message template 
 // @homepage     https://github.com/blackgreen100/SO-abusive-comments-helper
 // @author       blackgreen
-// @version      0.0.1
+// @version      0.0.2
 // @downloadURL  https://github.com/blackgreen100/SO-abusive-comments-helper/raw/master/dist/ModSelectAbusiveComments.user.js
+// @updateURL    https://github.com/blackgreen100/SO-abusive-comments-helper/raw/master/dist/ModSelectAbusiveComments.user.js
 //
 // @match        *://*.askubuntu.com/admin/users/*/post-comments*
 // @match        *://*.mathoverflow.net/admin/users/*/post-comments*
@@ -15,6 +16,14 @@ const bannerText =     `// ==UserScript==
 // @match        *://*.stackexchange.com/admin/users/*/post-comments*
 // @match        *://*.stackoverflow.com/admin/users/*/post-comments*
 // @match        *://*.superuser.com/admin/users/*/post-comments*
+
+// @match        *://*.askubuntu.com/users/message/create/*
+// @match        *://*.mathoverflow.net/users/message/create/*
+// @match        *://*.serverfault.com/users/message/create/*
+// @match        *://*.stackapps.com/users/message/create/*
+// @match        *://*.stackexchange.com/users/message/create/*
+// @match        *://*.stackoverflow.com/users/message/create/*
+// @match        *://*.superuser.com/users/message/create/*
 //
 // @grant        none
 //
