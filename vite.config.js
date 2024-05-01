@@ -5,7 +5,7 @@ const bannerText =     `// ==UserScript==
 // @description  All selected comments are auto-pasted into the Abusive to Others message template 
 // @homepage     https://github.com/blackgreen100/SO-abusive-comments-helper
 // @author       blackgreen
-// @version      0.0.2
+// @version      0.0.3
 // @downloadURL  https://github.com/blackgreen100/SO-abusive-comments-helper/raw/master/dist/ModSelectAbusiveComments.user.js
 // @updateURL    https://github.com/blackgreen100/SO-abusive-comments-helper/raw/master/dist/ModSelectAbusiveComments.user.js
 //
