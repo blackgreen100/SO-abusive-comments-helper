@@ -76,7 +76,8 @@ StackExchange.ready(function () {
               .join('\n\n')
 
             $textarea.val(($textarea.val() as string).replace(placeholder, formattedComments));
-
+            // @ts-expect-error MarkdownEditor is not in StackExchange Type
+            StackExchange.MarkdownEditor.refreshAllPreviews();
             observer.disconnect();
             sessionStorage.removeItem(sessionStorageKey)
         }

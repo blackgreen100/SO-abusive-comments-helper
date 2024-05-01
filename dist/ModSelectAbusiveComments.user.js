@@ -3,7 +3,7 @@
 // @description  All selected comments are auto-pasted into the Abusive to Others message template 
 // @homepage     https://github.com/blackgreen100/SO-abusive-comments-helper
 // @author       blackgreen
-// @version      0.0.2
+// @version      0.0.3
 // @downloadURL  https://github.com/blackgreen100/SO-abusive-comments-helper/raw/master/dist/ModSelectAbusiveComments.user.js
 // @updateURL    https://github.com/blackgreen100/SO-abusive-comments-helper/raw/master/dist/ModSelectAbusiveComments.user.js
 //
@@ -87,6 +87,7 @@
         const placeholder = "<!-- Please consider adding examples of the problematic behavior here. Research shows this helps with decreasing recidivism. If you do not include examples, delete the paragraph above. -->";
         const formattedComments = comments2.map((c) => "> " + c).join("\n\n");
         $textarea.val($textarea.val().replace(placeholder, formattedComments));
+        StackExchange.MarkdownEditor.refreshAllPreviews();
         observer.disconnect();
         sessionStorage.removeItem(sessionStorageKey);
       };
